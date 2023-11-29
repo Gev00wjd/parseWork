@@ -34,7 +34,6 @@ def parse_product():
                                                                                         class_='catalog-2-level-product-card product-card subcategory-or-type__products-item with-prices-drop')
         all_brends = soup.find('div', {'data-filter-group': 'Бренд'}).find_all('div',
                                                                                class_='catalog-checkbox catalog-checkbox-group__item')
-
         for i in All_product:
             p_id = i['data-sku']
             p_name = i.find('span', class_='product-card-name__text').text
